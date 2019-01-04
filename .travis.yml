@@ -22,6 +22,6 @@ script:
   - cp Gopkg.testing Gopkg.toml
   - make godep
   - make dependencies
-  - go test -v ./... -check.vv
+  - go test -v gopkg.in/src-d/go-billy-gluster.v0 -coverprofile=profile.out -covermode=atomic -check.vv
   - make test-coverage
   - make codecov
