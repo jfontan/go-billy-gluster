@@ -22,5 +22,6 @@ script:
   - cp Gopkg.testing Gopkg.toml
   - make godep
   - make dependencies
+  - go test -v ./... -check.vv
   - make test-coverage
   - make codecov
